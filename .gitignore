@@ -1,0 +1,4 @@
+.env
+__pycache__/
+D3vil.session
+D3vil.session-journal
