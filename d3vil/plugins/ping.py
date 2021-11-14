@@ -1,6 +1,6 @@
 
 
-from .. import D3vil, D3vil2, D3vil3, D3vil4, D3vil5, D3vil6, D3vil7, D3vil8, D3vil9, D3vil10, SUDO_USERS
+from .. import UstaD, UstaD2, UstaD3, UstaD4, UstaD5, UstaD6, UstaD7, UstaD8, UstaD9, UstaD10, SUDO_USERS
 from telethon import events
 from time import time
 from datetime import datetime
@@ -36,16 +36,16 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@D3vil.on(events.NewMessage(pattern="/ping"))
-@D3vil2.on(events.NewMessage(pattern="/ping"))
-@D3vil3.on(events.NewMessage(pattern="/ping"))
-@D3vil4.on(events.NewMessage(pattern="/ping"))
-@D3vil5.on(events.NewMessage(pattern="/ping"))
-@D3vil6.on(events.NewMessage(pattern="/ping"))
-@D3vil7.on(events.NewMessage(pattern="/ping"))
-@D3vil8.on(events.NewMessage(pattern="/ping"))
-@D3vil9.on(events.NewMessage(pattern="/ping"))
-@D3vil10.on(events.NewMessage(pattern="/ping"))
+@UstaD.on(events.NewMessage(pattern="/ping"))
+@UstaD2.on(events.NewMessage(pattern="/ping"))
+@UstaD3.on(events.NewMessage(pattern="/ping"))
+@UstaD4.on(events.NewMessage(pattern="/ping"))
+@UstaD5.on(events.NewMessage(pattern="/ping"))
+@UstaD6.on(events.NewMessage(pattern="/ping"))
+@UstaD7.on(events.NewMessage(pattern="/ping"))
+@UstaD8.on(events.NewMessage(pattern="/ping"))
+@UstaD9.on(events.NewMessage(pattern="/ping"))
+@UstaD10.on(events.NewMessage(pattern="/ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -53,4 +53,4 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"🤖 🇵 🇴 🇳 🇬 !\n`{ms}` 𝗺𝘀 #D3vil_op") 
+        await event.edit(f"🤖 🇵 🇴 🇳 🇬 !\n`{ms}` 𝗺𝘀 #d3vil_op")                     
