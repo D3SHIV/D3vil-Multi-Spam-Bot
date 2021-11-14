@@ -19,31 +19,31 @@ print("Successfully deployed!")
 print("Enjoy! Do visit @d3vil")
 
 if __name__ == "__main__":
-    UstaD.run_until_disconnected()
+    D3vil.run_until_disconnected()
     
 if __name__ == "__main__":
-    UstaD2.run_until_disconnected()
+    D3vil2.run_until_disconnected()
 
 if __name__ == "__main__":
-    UstaD3.run_until_disconnected()
+    D3vil3.run_until_disconnected()
     
 if __name__ == "__main__":
-    UstaD4.run_until_disconnected()
+    D3vil4.run_until_disconnected()
 
 if __name__ == "__main__":
-    UstaD5.run_until_disconnected()
+    D3vil5.run_until_disconnected()
     
 if __name__ == "__main__":
-    UstaD6.run_until_disconnected()
+    D3vil6.run_until_disconnected()
 
 if __name__ == "__main__":
-    UstaD7.run_until_disconnected()
+    D3vil7.run_until_disconnected()
     
 if __name__ == "__main__":
-    UstaD8.run_until_disconnected()
+    D3vil8.run_until_disconnected()
 
 if __name__ == "__main__":
-    UstaD9.run_until_disconnected()
+    D3vil9.run_until_disconnected()
     
 if __name__ == "__main__":
-    UstaD10.run_until_disconnected()
+    D3vil10.run_until_disconnected()
