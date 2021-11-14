@@ -3,7 +3,7 @@ import os
 import sys
 import git
 from telethon import events
-from .. import D3vil, D3vil2, D3vil3, D3vil4, D3vil5, D3vil6, D3vil7, D3vil8, D3vil9, D3vil10, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
+from .. import UstaD, UstaD2, UstaD3, UstaD4, UstaD5, UstaD6, UstaD7, UstaD8, UstaD9, UstaD10, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -32,16 +32,16 @@ HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 RESTARTING_APP = "re-starting heroku application"
 # -- Constants End -- #
 
-@D3vil.on(events.NewMessage(pattern="/update"))
-@D3vil2.on(events.NewMessage(pattern="/update"))
-@D3vil3.on(events.NewMessage(pattern="/update"))
-@D3vil4.on(events.NewMessage(pattern="/update"))
-@D3vil5.on(events.NewMessage(pattern="/update"))
-@D3vil6.on(events.NewMessage(pattern="/update"))
-@D3vil7.on(events.NewMessage(pattern="/update"))
-@D3vil8.on(events.NewMessage(pattern="/update"))
-@D3vil9.on(events.NewMessage(pattern="/update"))
-@D3vil10.on(events.NewMessage(pattern="/update"))
+@UstaD.on(events.NewMessage(pattern="/update"))
+@UstaD2.on(events.NewMessage(pattern="/update"))
+@UstaD3.on(events.NewMessage(pattern="/update"))
+@UstaD4.on(events.NewMessage(pattern="/update"))
+@UstaD5.on(events.NewMessage(pattern="/update"))
+@UstaD6.on(events.NewMessage(pattern="/update"))
+@UstaD7.on(events.NewMessage(pattern="/update"))
+@UstaD8.on(events.NewMessage(pattern="/update"))
+@UstaD9.on(events.NewMessage(pattern="/update"))
+@UstaD10.on(events.NewMessage(pattern="/update"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
@@ -49,7 +49,7 @@ async def restart(e):
 
 
 
-@D3vil.on(
+@UstaD.on(
     events.NewMessage(pattern="^/update", func=lambda e: e.sender_id in SMEX_USERS)
 )
 async def updater(message):
@@ -131,7 +131,7 @@ async def updater(message):
                 else:
                     remote = repo.create_remote("heroku", heroku_git_url)
                 asyncio.get_event_loop().create_task(
-                    deploy_start(D3vil, message, HEROKU_GIT_REF_SPEC, remote)
+                    deploy_start(UstaD, message, HEROKU_GIT_REF_SPEC, remote)
                 )
 
             else:
@@ -153,11 +153,11 @@ def generate_change_log(git_repo, diff_marker):
     return out_put_str
 
 
-async def deploy_start(D3vil, message, refspec, remote):
+async def deploy_start(UstaD, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
         "Updated your 𝐒𝐏𝐀𝐌𝐁𝐎𝐓 successfully sur!!!\nNow type `/ping` after 5 mins to check if I'm on🚶😏"
     )
     await remote.push(refspec=refspec)
-    await D3vil.disconnect()
+    await UstaD.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
