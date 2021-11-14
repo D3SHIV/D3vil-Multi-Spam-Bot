@@ -19,7 +19,7 @@ import os
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import D3vil, D3vil2, D3vil3, D3vil4, D3vil5, D3vil6, D3vil7, D3vil8, D3vil9, D3vil10, SUDO_USERS
+from .. import UstaD, UstaD2, UstaD3, UstaD4, UstaD5, UstaD6, UstaD7, UstaD8, UstaD9, UstaD10, SUDO_USERS
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -27,16 +27,16 @@ for x in SUDO_USERS:
 
 
 
-@D3vil.on(events.NewMessage(pattern="/spam"))
-@D3vil2.on(events.NewMessage(pattern="/spam"))
-@D3vil3.on(events.NewMessage(pattern="/spam"))
-@D3vil4.on(events.NewMessage(pattern="/spam"))
-@D3vil5.on(events.NewMessage(pattern="/spam"))
-@D3vil6.on(events.NewMessage(pattern="/spam"))
-@D3vil7.on(events.NewMessage(pattern="/spam"))
-@D3vil8.on(events.NewMessage(pattern="/spam"))
-@D3vil9.on(events.NewMessage(pattern="/spam"))
-@D3vil10.on(events.NewMessage(pattern="/spam"))
+@UstaD.on(events.NewMessage(pattern="/spam"))
+@UstaD2.on(events.NewMessage(pattern="/spam"))
+@UstaD3.on(events.NewMessage(pattern="/spam"))
+@UstaD4.on(events.NewMessage(pattern="/spam"))
+@UstaD5.on(events.NewMessage(pattern="/spam"))
+@UstaD6.on(events.NewMessage(pattern="/spam"))
+@UstaD7.on(events.NewMessage(pattern="/spam"))
+@UstaD8.on(events.NewMessage(pattern="/spam"))
+@UstaD9.on(events.NewMessage(pattern="/spam"))
+@UstaD10.on(events.NewMessage(pattern="/spam"))
 async def spam(e):
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
