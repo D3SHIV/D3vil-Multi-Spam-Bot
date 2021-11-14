@@ -5,7 +5,7 @@ import random
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import D3vil, D3vil2, D3vil3, D3vil4, D3vil5, D3vil6, D3vil7, D3vil8, D3vil9, D3vil10, SUDO_USERS, RAID, RRAID
+from .. import UstaD, UstaD2, UstaD3, UstaD4, UstaD5, UstaD6, UstaD7, UstaD8, UstaD9, UstaD10, SUDO_USERS, RAID, RRAID
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -15,16 +15,16 @@ que = {}
 
 
 
-@D3vil.on(events.NewMessage(pattern="/raid"))
-@D3vil2.on(events.NewMessage(pattern="/raid"))
-@D3vil3.on(events.NewMessage(pattern="/raid"))
-@D3vil4.on(events.NewMessage(pattern="/raid"))
-@D3vil5.on(events.NewMessage(pattern="/raid"))
-@D3vil6.on(events.NewMessage(pattern="/raid"))
-@D3vil7.on(events.NewMessage(pattern="/raid"))
-@D3vil8.on(events.NewMessage(pattern="/raid"))
-@D3vil9.on(events.NewMessage(pattern="/raid"))
-@D3vil10.on(events.NewMessage(pattern="/raid"))
+@UstaD.on(events.NewMessage(pattern="/raid"))
+@UstaD2.on(events.NewMessage(pattern="/raid"))
+@UstaD3.on(events.NewMessage(pattern="/raid"))
+@UstaD4.on(events.NewMessage(pattern="/raid"))
+@UstaD5.on(events.NewMessage(pattern="/raid"))
+@UstaD6.on(events.NewMessage(pattern="/raid"))
+@UstaD7.on(events.NewMessage(pattern="/raid"))
+@UstaD8.on(events.NewMessage(pattern="/raid"))
+@UstaD9.on(events.NewMessage(pattern="/raid"))
+@UstaD10.on(events.NewMessage(pattern="/raid"))
 async def spam(e):  
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -63,16 +63,16 @@ async def spam(e):
 
 
 
-@D3vil.on(events.NewMessage(incoming=True))
-@D3vil2.on(events.NewMessage(incoming=True))
-@D3vil3.on(events.NewMessage(incoming=True))
-@D3vil4.on(events.NewMessage(incoming=True))
-@D3vil5.on(events.NewMessage(incoming=True))
-@D3vil6.on(events.NewMessage(incoming=True))
-@D3vil7.on(events.NewMessage(incoming=True))
-@D3vil8.on(events.NewMessage(incoming=True))
-@D3vil9.on(events.NewMessage(incoming=True))
-@D3vil10.on(events.NewMessage(incoming=True))
+@UstaD.on(events.NewMessage(incoming=True))
+@UstaD2.on(events.NewMessage(incoming=True))
+@UstaD3.on(events.NewMessage(incoming=True))
+@UstaD4.on(events.NewMessage(incoming=True))
+@UstaD5.on(events.NewMessage(incoming=True))
+@UstaD6.on(events.NewMessage(incoming=True))
+@UstaD7.on(events.NewMessage(incoming=True))
+@UstaD8.on(events.NewMessage(incoming=True))
+@UstaD9.on(events.NewMessage(incoming=True))
+@UstaD10.on(events.NewMessage(incoming=True))
 async def _(event):
     global que
     queue = que.get(event.sender_id)
@@ -88,16 +88,16 @@ async def _(event):
         )
 
 
-@D3vil.on(events.NewMessage(pattern="/replyraid"))
-@D3vil2.on(events.NewMessage(pattern="/replyraid"))
-@D3vil3.on(events.NewMessage(pattern="/replyraid"))
-@D3vil4.on(events.NewMessage(pattern="/replyraid"))
-@D3vil5.on(events.NewMessage(pattern="/replyraid"))
-@D3vil6.on(events.NewMessage(pattern="/replyraid"))
-@D3vil7.on(events.NewMessage(pattern="/replyraid"))
-@D3vil8.on(events.NewMessage(pattern="/replyraid"))
-@D3vil9.on(events.NewMessage(pattern="/replyraid"))
-@D3vil10.on(events.NewMessage(pattern="/replyraid"))
+@UstaD.on(events.NewMessage(pattern="/replyraid"))
+@UstaD2.on(events.NewMessage(pattern="/replyraid"))
+@UstaD3.on(events.NewMessage(pattern="/replyraid"))
+@UstaD4.on(events.NewMessage(pattern="/replyraid"))
+@UstaD5.on(events.NewMessage(pattern="/replyraid"))
+@UstaD6.on(events.NewMessage(pattern="/replyraid"))
+@UstaD7.on(events.NewMessage(pattern="/replyraid"))
+@UstaD8.on(events.NewMessage(pattern="/replyraid"))
+@UstaD9.on(events.NewMessage(pattern="/replyraid"))
+@UstaD10.on(events.NewMessage(pattern="/replyraid"))
 async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
@@ -128,16 +128,16 @@ async def _(e):
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
 
-@D3vil.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil2.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil3.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil4.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil5.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil6.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil7.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil8.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil9.on(events.NewMessage(pattern="/dreplyraid"))
-@D3vil10.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD2.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD3.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD4.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD5.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD6.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD7.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD8.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD9.on(events.NewMessage(pattern="/dreplyraid"))
+@UstaD10.on(events.NewMessage(pattern="/dreplyraid"))
 async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
