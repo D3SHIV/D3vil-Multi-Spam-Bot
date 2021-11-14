@@ -1,8 +1,8 @@
 import glob
 from pathlib import Path
-from d3vil.utils import load_plugins
+from SpamBots.utils import load_plugins
 import logging
-from . import D3vil, D3vil2, D3vil3, D3vil5 , D3vil6, D3vil7, D3vil8, D3vil9, D3vil10
+from . import UstaD, UstaD2, UstaD3, UstaD5 , UstaD6, UstaD7, UstaD8, UstaD9, UstaD10
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
@@ -16,34 +16,34 @@ for name in files:
         load_plugins(plugin_name.replace(".py", ""))
 
 print("Successfully deployed!")
-print("Enjoy! Do visit @d3vil")
+print("Enjoy! Do visit @d3vil_op_bolte")
 
 if __name__ == "__main__":
-    D3vil.run_until_disconnected()
+    UstaD.run_until_disconnected()
     
 if __name__ == "__main__":
-    D3vil2.run_until_disconnected()
+    UstaD2.run_until_disconnected()
 
 if __name__ == "__main__":
-    D3vil3.run_until_disconnected()
+    UstaD3.run_until_disconnected()
     
 if __name__ == "__main__":
-    D3vil4.run_until_disconnected()
+    UstaD4.run_until_disconnected()
 
 if __name__ == "__main__":
-    D3vil5.run_until_disconnected()
+    UstaD5.run_until_disconnected()
     
 if __name__ == "__main__":
-    D3vil6.run_until_disconnected()
+    UstaD6.run_until_disconnected()
 
 if __name__ == "__main__":
-    D3vil7.run_until_disconnected()
+    UstaD7.run_until_disconnected()
     
 if __name__ == "__main__":
-    D3vil8.run_until_disconnected()
+    UstaD8.run_until_disconnected()
 
 if __name__ == "__main__":
-    D3vil9.run_until_disconnected()
+    UstaD9.run_until_disconnected()
     
 if __name__ == "__main__":
-    D3vil10.run_until_disconnected()
+    UstaD10.run_until_disconnected()
